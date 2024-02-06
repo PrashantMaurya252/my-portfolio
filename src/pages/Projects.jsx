@@ -1,154 +1,115 @@
 function Projects() {
   return (
     <div>
-      <h1 className="flex justify-center self-center text-2xl font-bold p-3 mt-3 ">
+      <h1 className="flex self-center justify-center text-slate-600 font-bold text-4xl p-3 m-3 font-sans-serif">
         My Projects
       </h1>
-      <div className="flex flex-col gap-6">
-      <div className="border border-gray-800 mx-auto p-6  w-[768px] rounded-tl-3xl rounded-br-3xl">
-        <h3 className="text-xl font-bold py-2 hover:underline cursor-pointer">
-          Blog App
-        </h3>
-        <p className="text-md text-gray-500">
-          <span className="text-lg font-semibold text-black">
-            Tech Stack Used:
-          </span>{" "}
-          React,Tailwindcss,React-router,Redux-toolkit,Node.js,Express.js,MongoDB
-        </p>
-        <p className="text-md text-gray-500">
-          <span className="text-lg font-semibold text-black">
-            NPM Packages Used:
-          </span>{" "}
-          JWT,Flowbite-react,mongoose
-        </p>
-        <div>
-          <span className="text-lg font-semibold text-black">Features: </span>
-          <ul className="list-style-bullets list-disc">
-            <li>
-              <p className="text-md text-gray-500">
-                You can signup and login through Google or create any individual
-              </p>
-            </li>
-            <li>
-              <p className="text-md text-gray-500">Only Admin can post Blog</p>
-            </li>
-            <li>
-              <p className="text-md text-gray-500">
-                You can see any post but like them or comment on it you used to
-                login
-              </p>
-            </li>
-            <li>
-              <p className="text-md text-gray-500">
-                Admin can see Dashboard which show all the activities regarding
-                posts,comments and users
-              </p>
-            </li>
-          </ul>
+      <div className="flex gap-6 md:flex-row flex-col justify-center items-center">
+        <div className="flex flex-col p-3 mx-auto md:w-1/4 border-teal-500 border-4 rounded-lg bg-slate-100 ">
+          <h1 className="font-sans-serif font-bold">Blog App</h1>
+          <h3 className="font-bold">
+            Tech Stack: <span className=" font-system-ui font-thin">MERN</span>
+          </h3>
+          <img
+            className=" w-80 rounded-md border-teal-400 border-2 "
+            src="https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&"
+            alt="blog"
+          />
+          <div className="flex justify-between">
+            <a
+              href="https://mern-blog-m5rc.onrender.com"
+              className="bg-teal-300 w-fit text-xl p-3 rounded-md mt-3 hover:bg-green-500 hover:text-white font-sans-serif font-bold"
+            >
+              Live Demo Link
+            </a>
+            <a
+              href="https://github.com/PrashantMaurya252/blog-app"
+              className="bg-teal-300 w-fit text-xl p-3 rounded-md mt-3  hover:bg-green-500 hover:text-white font-sans-serif font-bold"
+            >
+              Github Link
+            </a>
+          </div>
         </div>
-        <div className="flex justify-between">
-          <span className="text-xl font-bold py-3 hover:text-teal-400">
-            <a href="https://github.com/PrashantMaurya252/blog-app" target="_blank" rel="noopener noreferrer">
-              Github link for this Project
+        <div className="flex flex-col p-3 mx-auto md:w-1/4 border-teal-500 border-4 rounded-lg bg-slate-100">
+          <h1 className="font-sans-serif font-bold">Book Store</h1>
+          <h3 className="font-bold">
+            Tech Stack: <span className=" font-system-ui font-thin">MERN</span>
+          </h3>
+          <img
+            className="w-80 rounded-md border-teal-400 border-2"
+            src="https://images.pexels.com/photos/2607687/pexels-photo-2607687.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="blog"
+          />
+          <div className="flex justify-between">
+            <a
+              href="https://jade-dieffenbachia-692a17.netlify.app/"
+              className="bg-teal-300 w-fit text-xl p-3 rounded-md mt-3 hover:bg-green-500 hover:text-white font-sans-serif font-bold"
+            >
+              Live Demo Link
             </a>
-          </span>
-          <span className="text-xl font-bold py-3 hover:text-teal-400">
-            <a href="https://mern-blog-m5rc.onrender.com/" target="_blank" rel="noopener noreferrer">
-              Live link of website
+            <a
+              href="https://github.com/PrashantMaurya252/merns-tack-bookstore"
+              className="bg-teal-300 w-fit text-xl p-3 rounded-md mt-3  hover:bg-green-500 hover:text-white font-sans-serif font-bold"
+            >
+              Github Link
             </a>
-          </span>
+          </div>
         </div>
-      </div>
-      <div className="border border-gray-800  p-6 mx-auto w-[768px] rounded-tl-3xl rounded-br-3xl">
-        <h3 className="text-xl font-bold py-2 hover:underline cursor-pointer">
-          Book App
-        </h3>
-        <p className="text-md text-gray-500">
-          <span className="text-lg font-semibold text-black">
-            Tech Stack Used:
-          </span>{" "}
-          React,Tailwindcss,React-router,Node.js,Express.js,MongoDB
-        </p>
-        <p className="text-md text-gray-500">
-          <span className="text-lg font-semibold text-black">
-            NPM Packages Used:
-          </span>{" "}
-          mongoose
-        </p>
-        <div>
-          <span className="text-lg font-semibold text-black">Features: </span>
-          <ul className="list-style-bullets list-disc">
-            <li>
-              <p className="text-md text-gray-500">
-                This website able to perform CRUD operation
-              </p>
-            </li>
-            <li>
-              <p className="text-md text-gray-500">You can add any book with book name ,author name and publishing year</p>
-            </li>
-            <li>
-              <p className="text-md text-gray-500">
-                You can also delete and update any book
-              </p>
-            </li>
-           
-          </ul>
+        <div className="flex flex-col p-3 mx-auto md:w-1/4 border-teal-500 border-4 rounded-lg bg-slate-100">
+          <h1 className="font-sans-serif font-bold">Google API Book Store</h1>
+          <h3 className="font-bold">
+            Tech Stack:{" "}
+            <span className=" font-system-ui font-thin">React,TailwindCSS</span>
+          </h3>
+          <img
+            className="w-80 rounded-md border-teal-400 border-2"
+            src="https://images.pexels.com/photos/5490916/pexels-photo-5490916.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="book"
+          />
+          <div className="flex justify-between">
+            <a
+              href="https://relaxed-basbousa-e74b1c.netlify.app/"
+              className="bg-teal-300 w-fit text-xl p-3 rounded-md mt-3 hover:bg-green-500 hover:text-white font-sans-serif font-bold"
+            >
+              Live Demo Link
+            </a>
+            <a
+              href="https://github.com/PrashantMaurya252/React-Book-Store"
+              className="bg-teal-300 w-fit text-xl p-3 rounded-md mt-3  hover:bg-green-500 hover:text-white font-sans-serif font-bold"
+            >
+              Github Link
+            </a>
+          </div>
         </div>
-        <div className="flex justify-between">
-          <span className="text-xl font-bold py-3 hover:text-teal-400">
-            <a href="https://github.com/PrashantMaurya252/merns-tack-bookstore" target="_blank" rel="noopener noreferrer">
-              Github link for this Project
+        <div className="flex flex-col p-3 mx-auto md:w-1/4 border-teal-500 border-4 rounded-lg bg-slate-100">
+          <h1 className="font-sans-serif font-bold">Shop-cart</h1>
+          <h3 className="font-bold">
+            Tech Stack:{" "}
+            <span className=" font-system-ui font-thin">
+              React,Redux-Toolkit,TailwindCSS
+            </span>
+          </h3>
+          <img
+            className="w-80 rounded-md border-teal-400 border-2"
+            src="https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="book"
+          />
+          <div className="flex justify-between">
+            <a
+              href="https://grand-creponne-1b573d.netlify.app/"
+              className="bg-teal-300 w-fit text-xl p-3 rounded-md mt-3 hover:bg-green-500 hover:text-white font-sans-serif font-bold"
+            >
+              Live Demo Link
             </a>
-          </span>
-          <span className="text-xl font-bold py-3 hover:text-teal-400">
-            <a href="https://jade-dieffenbachia-692a17.netlify.app/" target="_blank" rel="noopener noreferrer">
-              Live link of website
+            <a
+              href="https://github.com/PrashantMaurya252/e-commerce"
+              className="bg-teal-300 w-fit text-xl p-3 rounded-md mt-3  hover:bg-green-500 hover:text-white font-sans-serif font-bold"
+            >
+              Github Link
             </a>
-          </span>
-        </div>
-      </div>
-      <div className="border border-gray-800  p-6 mx-auto w-[768px] rounded-tl-3xl rounded-br-3xl">
-        <h3 className="text-xl font-bold py-2 hover:underline cursor-pointer">
-          Google Book API
-        </h3>
-        <p className="text-md text-gray-500">
-          <span className="text-lg font-semibold text-black">
-            Tech Stack Used:
-          </span>{" "}
-          React,Tailwindcss,React-router
-        </p>
-        
-        <div>
-          <span className="text-lg font-semibold text-black">Features: </span>
-          <ul className="list-style-bullets list-disc">
-            <li>
-              <p className="text-md text-gray-500">
-                This website created using Google Book Api
-              </p>
-            </li>
-            <li>
-              <p className="text-md text-gray-500">You can see various books with its details when you click on it</p>
-            </li>
-            
-           
-          </ul>
-        </div>
-        <div className="flex justify-between">
-          <span className="text-xl font-bold py-3 hover:text-teal-400">
-            <a href="https://github.com/PrashantMaurya252/React-Book-Store" target="_blank" rel="noopener noreferrer">
-              Github link for this Project
-            </a>
-          </span>
-          <span className="text-xl font-bold py-3 hover:text-teal-400">
-            <a href="https://relaxed-basbousa-e74b1c.netlify.app" target="_blank" rel="noopener noreferrer">
-              Live link of website
-            </a>
-          </span>
+          </div>
         </div>
       </div>
-      </div>
-
-      
     </div>
   );
 }

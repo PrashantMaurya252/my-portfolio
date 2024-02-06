@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes linearMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+    font-size: smaller;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+    
+  }
+}
+
+.title1,
+.title2 {
+  animation: upDown 5s linear infinite;
+}
+
+.title {
+  animation: upDown 1s linear;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-spin {
+  animation: linearMove 5s linear alternate-reverse infinite;
+}
